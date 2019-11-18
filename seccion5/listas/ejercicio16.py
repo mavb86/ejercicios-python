@@ -46,10 +46,10 @@ while True:
         else:
             lista.insert(pos - 1, num)
     elif opcion == 3:
-        print("Longitud de la lista: %d" % len(lista))
+        print("Longitud de la lista: {0}".format(lista))
     elif opcion == 4:
         if len(lista) > 0:
-            print("El último elemento es %d y lo borramos." % lista.pop())
+            print("El último elemento es {0} y lo borramos.".format(lista.pop()))
         else:
             print("La lista está vacía")
     elif opcion == 5:
@@ -57,10 +57,10 @@ while True:
         if pos > len(lista):
             print("Posición incorrecta")
         else:
-            print("El elemento es %d y lo borramos." % lista.pop(pos - 1))
+            print("El elemento es {0} y lo borramos.".format(lista.pop(pos - 1)))
     elif opcion == 6:
         num = int(input("Dime un número:"))
-        print("El número %d aparece %d veces en la lista." % (num, lista.count(lista)))
+        print("El número {0} aparece {1} veces en la lista.".format(num, lista.count(lista)))
     elif opcion == 7:
         num = int(input("Dime un número:"))
         indice_buscar = 0
