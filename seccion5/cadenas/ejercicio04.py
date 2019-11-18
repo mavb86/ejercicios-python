@@ -3,18 +3,16 @@
 # Suponiendo que hemos introducido una cadena por teclado que representa una frase (palabras separadas por espacios),
 # realiza un programa que cuente cuantas palabras tiene.
 
+cont = 0
+posicion = 0
+
 while True:
     cadena = input("Introduzca una frase (cadena con espacios): ")
+    cadena = cadena.strip()
     if cadena.count(" ") >= 1:
         break
     else:
         print("ERROR: No ha introducido una cadena con espacios")
-
-# Se eliminan los posibles espacios del inicio y final que haya podido introducir el usuario
-cadena = cadena.strip()
-
-cont = 0
-posicion = 0
 
 # Busco los espacios
 posicion = cadena.find(" ", posicion)
