@@ -1,1 +1,1 @@
-# pruebas-python
+# ejercicios-python
